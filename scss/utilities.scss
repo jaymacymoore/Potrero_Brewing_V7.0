@@ -1,0 +1,52 @@
+ul{ 
+  list-style: none;
+}
+
+a{ 
+  color: #333;
+  text-decoration-line: none;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-primary{
+  color: $primary-color !important;
+}
+
+.text-secondary{
+  color: $secondary-color !important;
+}
+
+.bg-color-secondary{
+  background-color: $secondary-color;
+}
+
+.bg-color-seagreen{
+  background-color: $sea-green
+}
+
+.bg-color-orangered{
+  background-color: $orange-red;
+}
+
+#about,
+#beer{
+  .column-2{
+    border-radius: 1rem;
+  }
+}
+
+#about{
+  margin-bottom: 2rem;
+}

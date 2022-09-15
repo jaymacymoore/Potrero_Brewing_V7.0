@@ -1,0 +1,51 @@
+#events{
+  margin-top: 5rem;
+  
+  .events_header_container{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 2rem;
+  }
+
+  img,
+  .column-2{
+    width: 100% !important;
+    border-radius: 2rem !important;
+ }
+}
+
+.events{
+  &_text--border{
+    border: .2rem solid #8ffcff;
+    border-radius: 1rem;
+
+    box-shadow: 
+    0 0 1rem #0900ff, 
+    0 0 2rem #0900ff,
+    0 0 3rem #0900ff,
+    inset 0 0 1rem #0900ff
+    ;
+  }
+
+  &_text--game{
+    font-size: 3rem;
+    color: #e20000;
+
+    text-shadow: 
+    0 0 1rem #ff5b5b, 
+    0 0 2rem #ff5b5b;
+  }
+
+  &_text--on{
+    font-size: 3rem;
+    color: #FBFFFF;
+
+    text-shadow: 
+    0 0 1rem #fbffff, 
+    0 0 2rem #fbffff;
+  }
+}
+
+.events_upcomming{
+  color: whitesmoke;
+}

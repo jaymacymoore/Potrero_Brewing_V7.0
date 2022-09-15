@@ -1,0 +1,29 @@
+#beer{
+  .beer_header_container{
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .row{
+  height: 75%;
+  margin-bottom: 2rem;
+}
+  img{
+    width: 100% !important;
+    border-radius: 2rem !important; 
+  }
+
+  .beer-container,
+  .beer-container--2{
+    display: flex;
+
+    .card{
+      background: black;
+      color: whitesmoke;
+    }
+  }
+
+  .beer-container--2{
+    justify-content: space-around;
+  }
+}
