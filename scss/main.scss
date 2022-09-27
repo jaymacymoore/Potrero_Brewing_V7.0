@@ -1,11 +1,15 @@
-@import "mixins.scss";
-@import "variables.scss";
+@import "mixins";
+@import "variables";
 
-@import "base.scss";
-@import "utilities.scss";
+@import "base";
+@import "utilities";
 
-@import "navbar_hero.scss";
-@import "flex_items.scss";
+@import "navbar_hero";
+@import "flex_items";
 @import "about_info";
 @import "beer_info";
 @import "events_info";
+
+@import "footer";
+
+@import "media_queries";

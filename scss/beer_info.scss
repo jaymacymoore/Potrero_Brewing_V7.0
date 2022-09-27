@@ -2,6 +2,8 @@
   .beer_header_container{
     text-align: center;
     color: whitesmoke;
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
   }
 
   .row{
@@ -13,8 +15,7 @@
     border-radius: 2rem !important; 
   }
 
-  .beer-container,
-  .beer-container--2{
+  .beer-container{
     display: flex;
 
     .card{
@@ -23,7 +24,47 @@
     }
   }
 
-  .beer-container--2{
+  .beer-container{
     justify-content: space-around;
+  }
+}
+
+.beer{
+  &_text--border{
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    height: 7.5rem;
+    border: .2rem solid #6ef2d3;
+    border-radius: 1rem;
+    align-items: center;
+    margin: 2.4rem auto;
+
+    box-shadow: 
+    0 0 1rem #1DC19B, 
+    0 0 2rem #1DC19B,
+    0 0 3rem #1DC19B,
+    inset 0 0 1rem #1DC19B
+    ;
+  }
+
+  &_text--beer{
+    font-size: 3rem;
+    color: #dc582a;
+    margin: -4.7rem auto;
+
+    text-shadow: 
+    0 0 1rem #E58461, 
+    0 0 2rem #E58461;
+  }
+
+  &_text--cocktails{
+    font-size: 3rem;
+    color: #FBFFFF;
+    margin: 3.9rem auto;
+
+    text-shadow: 
+    0 0 1rem #fbffff, 
+    0 0 2rem #fbffff;
   }
 }

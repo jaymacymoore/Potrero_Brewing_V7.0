@@ -1,0 +1,47 @@
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 12.5rem;
+
+  &_logo{
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+  }
+
+  &_para{
+    color: whitesmoke;
+  }
+
+  &_social{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    align-self: center;
+    width: 15rem;
+    justify-content: space-around; 
+
+    a{
+    color: $sea-green;
+    transition: all .3s ease-in;
+
+    border: .2rem solid whitesmoke;
+    border-radius: 50%;
+    // background-color: whitesmoke;
+    height: 5.5rem;
+    width: 5.5rem !important;
+    text-align: center;
+    padding: 1rem;
+    transition: all .2s ease-in;
+
+    &:hover{
+      color: $sea-green;
+      scale: 1.7;
+   }
+  }
+ }
+}

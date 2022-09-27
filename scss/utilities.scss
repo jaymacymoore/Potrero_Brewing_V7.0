@@ -20,12 +20,20 @@ img {
   width: 100%;
 }
 
+.logo{
+  font-size: 2.9rem;
+}
+
 .text-primary{
   color: $primary-color !important;
 }
 
 .text-secondary{
   color: $secondary-color !important;
+}
+
+.bg-color-primary{
+  background-color: $primary-color;
 }
 
 .bg-color-secondary{
@@ -44,9 +52,23 @@ img {
 #beer{
   .column-2{
     border-radius: 1rem;
+   margin-left: .75rem;
   }
 }
 
 #about{
   margin-bottom: 2rem;
+}
+
+#events{
+  .column-1{
+   margin-left: .75rem;
+  }
+}
+
+.anchor{
+  display: block;
+  height: 5rem;
+  margin-top: -5rem;
+  visibility: hidden;
 }

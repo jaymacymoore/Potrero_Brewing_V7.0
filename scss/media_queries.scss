@@ -1,0 +1,50 @@
+/* Media Quieres */
+@media(max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a{
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items{
+    flex-direction: column;
+  }
+
+  .flex-columns .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img{
+    width: 70%;
+  }
+
+  .column-2 h2{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-left: 2rem;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1200px){
+  .contact .column-2 h2{
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;
+    }
+  }
+
+@media(min-width: 600px){
+  .contact h2{
+  margin-left: 20%;
+    }
+  }
