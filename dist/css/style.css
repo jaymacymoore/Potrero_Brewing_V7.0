@@ -7,7 +7,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth !important; }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 50%; } }
@@ -87,75 +88,274 @@ img {
   margin-top: -5rem;
   visibility: hidden; }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #333;
-  color: #fff;
-  opacity: .8;
-  width: 100%;
-  height: 7rem;
-  position: fixed;
-  top: 0;
-  padding: 0 3rem;
-  transition: 0.5s; }
+#about .about_header_container {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 2.4rem; }
 
-.navbar.top {
-  background: transparent; }
+.info-section {
+  padding: 0.525rem 4.2rem;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700; }
 
-.navbar a {
-  color: #fff;
-  padding: 1rem 2rem;
-  margin: 0 .5rem; }
-
-.navbar a:hover {
-  border-bottom: #2c9199 0.2rem solid;
-  color: #ef9600; }
-
-.navbar ul {
-  display: flex; }
-
-.navbar .logo {
-  font-weight: 400; }
-
-/* Header */
-.hero {
-  background: url(/dist/img/PBC_LOGO_Family-20.png) no-repeat center center/contain;
-  height: 100vh;
-  position: relative;
-  color: #fff; }
-
-.hero .content {
+.flex-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around; }
+
+.hours {
+  background-color: #ef9600;
+  padding: 0.525rem 4.2rem; }
+
+.closed {
+  background-color: #7ce0d3;
+  padding: 1.55rem 4.6rem; }
+
+.phone {
+  background-color: #dc582a;
+  padding: 1.5rem 5.5rem; }
+
+.about_text--border {
+  display: flex;
+  width: 17rem;
+  border: .2rem solid #ef9600;
+  border-radius: 1rem;
   align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 0 1rem #FFBC42,  0 0 2rem #FFBC42, 0 0 3rem #FFBC42, inset 0 0 1rem #FFBC42; }
+
+.about_text--who {
+  font-size: 3rem;
+  color: #FBFFFF;
+  margin: auto;
+  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+
+.about_text--we-are {
+  font-size: 3rem;
+  color: #7ce0d3;
+  margin: auto;
+  text-shadow: 0 0 1rem #0FFFDF,  0 0 2rem #0FFFDF; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 32rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15), 0 1.5rem 4rem rgba(255, 255, 255, 0.25); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #2c9199, #7ce0d3); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ef9600, #dc582a); }
+      .card__side--back-3 {
+        background-image: url(/dist/img/PBC_LOGO_Family-20.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 100%;
+    background-blend-mode: soft-light;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem; }
+    .card__picture--1 {
+      background-image: url(/dist/img/beer_stock.jpg); }
+    .card__picture--2 {
+      background-image: url(/dist/img/beer_stock.jpg);
+      height: 50%;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2c9199, #7ce0d3), url(../img/nat-7.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(44, 145, 153, 0.85), rgba(124, 224, 211, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(239, 150, 0, 0.85), rgba(220, 88, 42, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(44, 145, 153, 0.85), rgba(124, 224, 211, 0.85)); }
+  .card__details {
+    padding: 3rem;
+    background-color: #000; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #e5e1e6; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 0.3rem;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
+
+.beer_cards {
+  justify-content: space-evenly !important; }
+
+.side-2 {
+  height: 52rem !important;
+  background-size: 50% !important;
+  background-color: black; }
+
+#beer .beer_header_container {
   text-align: center;
-  height: 100%;
-  padding: 0 2rem; }
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-bottom: 2.4rem; }
 
-.hero .content h1 {
-  font-size: 5rem;
-  padding-top: 2.5rem; }
+#beer .row {
+  height: 75%;
+  margin-bottom: 2rem; }
 
-.hero .content p {
-  font-size: 2.3rem;
-  max-width: 60rem;
-  margin: 2rem 0 3rem; }
+#beer img {
+  width: 100% !important;
+  border-radius: 2rem !important; }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: zero;
-  left: zero;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); }
+#beer .beer-container {
+  display: flex; }
+  #beer .beer-container .card {
+    background: black;
+    color: whitesmoke; }
 
-.hero * {
-  z-index: 10; }
+#beer .beer-container {
+  justify-content: space-around; }
+
+.beer_text--border {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  height: 7.5rem;
+  border: .2rem solid #6ef2d3;
+  border-radius: 1rem;
+  align-items: center;
+  margin: 2.4rem auto;
+  box-shadow: 0 0 1rem #1DC19B,  0 0 2rem #1DC19B, 0 0 3rem #1DC19B, inset 0 0 1rem #1DC19B; }
+
+.beer_text--beer {
+  font-size: 3rem;
+  color: #dc582a;
+  margin: -4.7rem auto;
+  text-shadow: 0 0 1rem #E58461,  0 0 2rem #E58461; }
+
+.beer_text--cocktails {
+  font-size: 3rem;
+  color: #FBFFFF;
+  margin: 3.9rem auto;
+  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+
+#events {
+  margin-top: 5rem; }
+  #events .events_header_container {
+    text-align: center;
+    color: whitesmoke;
+    margin: 2.4rem 0; }
+  #events img,
+  #events .column-2 {
+    width: 100% !important;
+    border-radius: 2rem !important; }
+
+.events_text--border {
+  display: flex;
+  width: 17rem;
+  border: .2rem solid #8ffcff;
+  border-radius: 1rem;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 0 1rem #0900ff,  0 0 2rem #0900ff, 0 0 3rem #0900ff, inset 0 0 1rem #0900ff; }
+
+.events_text--game {
+  font-size: 3rem;
+  color: #e20000;
+  margin: auto;
+  text-shadow: 0 0 1rem #ff5b5b,  0 0 2rem #ff5b5b; }
+
+.events_text--on {
+  font-size: 3rem;
+  color: #FBFFFF;
+  margin: auto;
+  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+
+.events_upcomming {
+  color: whitesmoke; }
+  .events_upcomming--mb {
+    margin-bottom: 20rem; }
 
 /* Flex Items */
 .flex-items {
@@ -240,140 +440,105 @@ img {
   max-width: 25%;
   padding: 0 4px; }
 
-#about .about_header_container {
-  color: whitesmoke;
-  text-align: center;
-  margin-bottom: 2.4rem; }
+[class^="col-"] {
+  float: left; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      [class^="col-"]:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    [class^="col-"] {
+      width: 100% !important; } }
 
-.info-section {
-  padding: 0.525rem 4.2rem;
-  width: 40%;
-  margin: 0 auto;
-  border-radius: 2.5rem;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700; }
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2); }
 
-.flex-info {
+.col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3); }
+
+.col-2-of-3 {
+  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+
+.col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4); }
+
+.col-2-of-4 {
+  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+
+.col-3-of-4 {
+  width: calc( 3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
+
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.hours {
-  background-color: #ef9600;
-  padding: 0.525rem 4.2rem; }
-
-.closed {
-  background-color: #7ce0d3;
-  padding: 1.55rem 4.6rem; }
-
-.phone {
-  background-color: #dc582a;
-  padding: 1.5rem 5.5rem; }
-
-.about_text--border {
-  display: flex;
-  width: 17rem;
-  border: .2rem solid #ef9600;
-  border-radius: 1rem;
   align-items: center;
-  margin: 0 auto;
-  box-shadow: 0 0 1rem #FFBC42,  0 0 2rem #FFBC42, 0 0 3rem #FFBC42, inset 0 0 1rem #FFBC42; }
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: .8;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  padding: 0 3rem;
+  transition: 0.5s; }
 
-.about_text--who {
-  font-size: 3rem;
-  color: #FBFFFF;
-  margin: auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+.navbar.top {
+  background: transparent; }
 
-.about_text--we-are {
-  font-size: 3rem;
-  color: #7ce0d3;
-  margin: auto;
-  text-shadow: 0 0 1rem #0FFFDF,  0 0 2rem #0FFFDF; }
+.navbar a {
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 0 .5rem; }
 
-#beer .beer_header_container {
-  text-align: center;
-  color: whitesmoke;
-  font-size: 3rem;
-  margin-bottom: 2.4rem; }
+.navbar a:hover {
+  border-bottom: #2c9199 0.2rem solid;
+  color: #ef9600; }
 
-#beer .row {
-  height: 75%;
-  margin-bottom: 2rem; }
-
-#beer img {
-  width: 100% !important;
-  border-radius: 2rem !important; }
-
-#beer .beer-container {
+.navbar ul {
   display: flex; }
-  #beer .beer-container .card {
-    background: black;
-    color: whitesmoke; }
 
-#beer .beer-container {
-  justify-content: space-around; }
+.navbar .logo {
+  font-weight: 400; }
 
-.beer_text--border {
+/* Header */
+.hero {
+  background: url(/dist/img/PBC_LOGO_Family-20.png) no-repeat center center/contain;
+  height: 100vh;
+  position: relative;
+  color: #fff; }
+
+.hero .content {
   display: flex;
   flex-direction: column;
-  width: 22rem;
-  height: 7.5rem;
-  border: .2rem solid #6ef2d3;
-  border-radius: 1rem;
   align-items: center;
-  margin: 2.4rem auto;
-  box-shadow: 0 0 1rem #1DC19B,  0 0 2rem #1DC19B, 0 0 3rem #1DC19B, inset 0 0 1rem #1DC19B; }
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 2rem; }
 
-.beer_text--beer {
-  font-size: 3rem;
-  color: #dc582a;
-  margin: -4.7rem auto;
-  text-shadow: 0 0 1rem #E58461,  0 0 2rem #E58461; }
+.hero .content h1 {
+  font-size: 5rem;
+  padding-top: 2.5rem; }
 
-.beer_text--cocktails {
-  font-size: 3rem;
-  color: #FBFFFF;
-  margin: 3.9rem auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+.hero .content p {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  margin: 2rem 0 3rem; }
 
-#events {
-  margin-top: 5rem; }
-  #events .events_header_container {
-    text-align: center;
-    color: whitesmoke;
-    margin: 2.4rem 0; }
-  #events img,
-  #events .column-2 {
-    width: 100% !important;
-    border-radius: 2rem !important; }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: zero;
+  left: zero;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); }
 
-.events_text--border {
-  display: flex;
-  width: 17rem;
-  border: .2rem solid #8ffcff;
-  border-radius: 1rem;
-  align-items: center;
-  margin: 0 auto;
-  box-shadow: 0 0 1rem #0900ff,  0 0 2rem #0900ff, 0 0 3rem #0900ff, inset 0 0 1rem #0900ff; }
-
-.events_text--game {
-  font-size: 3rem;
-  color: #e20000;
-  margin: auto;
-  text-shadow: 0 0 1rem #ff5b5b,  0 0 2rem #ff5b5b; }
-
-.events_text--on {
-  font-size: 3rem;
-  color: #FBFFFF;
-  margin: auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
-
-.events_upcomming {
-  color: whitesmoke; }
-  .events_upcomming--mb {
-    margin-bottom: 20rem; }
+.hero * {
+  z-index: 10; }
 
 .footer {
   display: flex;
