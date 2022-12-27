@@ -52,8 +52,15 @@
   }
 }
 
-.events_upcomming{
+.events_upcoming{
   color: whitesmoke;
+
+    &--1,
+    &--2,
+    &--3{
+      width: 30%;
+      height: 50rem;
+    }
 
   &--mb{
     margin-bottom: 20rem;

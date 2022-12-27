@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" />
   <title>Potrero Brewing Company: The Garden</title>
 </head>
 <body id="beer_garden">
@@ -20,21 +21,62 @@
           <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#beer">Beers</a></li>
           <li><a href="index.html#events">Events</a></li>
+          <li><a href="index.html#merch">Merch</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="beer_garden.html">El Garden</a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="content">
-      <h1>We Have Beers</h1>
-      <p>Some fun tagline!</p>
-      <!-- <a href="#about" class="btn"><i class="fas fa-chevron-right"> </i> Read More</a> -->
-    </div>
   </header>
 
   <main>
-  
+    <section id="gritanga"> 
+      <div class="gritanga flex-columns flex-reverse">
+        <!-- <div class="beer_header_container">
+          <h2><span class="beer_text--border">&nbsp; <span class="beer_text--beer">BEERS</span> <span class="beer_text--cocktails">& COCKTAILS</span> &nbsp; </span></h2>
+        </div> -->
+        <div class="row">
+          <div class="column"> 
+            <div class="column-1">
+              <img src="./img/beer_stock.jpg" alt="Blog">
+            </div>
+          </div>
+            <div class="column">
+            <div class="column-2 bg-color-seagreen">
+                <!-- <h4>Our Beer</h4> -->
+                <h2>Gritanga</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus perspiciatis quod qui fugit pariatur minus quam modi similique incidunt iure omnis reiciendis sequi exercitationem, blanditiis tempora, perferendis ducimus voluptatem debitis!</p>
+            </div>
+          </div>
+        </div>
+     </div>
+
+    </section>
+
+    <section id="gracia"> 
+      <div class="gracia flex-columns">
+        <!-- <div class="beer_header_container">
+          <h2><span class="beer_text--border">&nbsp; <span class="beer_text--beer">BEERS</span> <span class="beer_text--cocktails">& COCKTAILS</span> &nbsp; </span></h2>
+        </div> -->
+        <div class="row">
+          <div class="column"> 
+            <div class="column-1">
+              <img src="./img/beer_stock.jpg" alt="Blog">
+            </div>
+          </div>
+            <div class="column">
+            <div class="column-2 bg-color-secondary">
+                <!-- <h4>Our Beer</h4> -->
+                <h2>Gracia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus perspiciatis quod qui fugit pariatur minus quam modi similique incidunt iure omnis reiciendis sequi exercitationem, blanditiis tempora, perferendis ducimus voluptatem debitis!</p>
+            </div>
+          </div>
+        </div>
+     </div>
+
+    </section>
+
   </main>
 
   <footer class="footer bg-dark">
@@ -46,7 +88,9 @@
     </div>
     <div class="footer_social">
       <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="#"> <i class="fa fa-map-pin fa-2x"></i></a>
+      <a href="#"><i class="fa fa-map-pin fa-2x"></i></a>
+      <a href="#"><i class="fa fa-brands fa-google fa-2x"></i></a>
+      <a href="#"><img src="./img/tripadvisor.png" alt=""></a>
     </div>
   </footer>
   
@@ -54,7 +98,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/lightbox.min.js"></script>
-  <script>
+  <script>  
 
     const navbar = document.getElementById('navbar');
     let scrolled = false;

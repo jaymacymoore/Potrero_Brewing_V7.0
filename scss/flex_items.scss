@@ -5,13 +5,6 @@
   justify-content: center;
   text-align: center;
   height:100%;
-
-  &_events--1,
-  &_events--2,
-  &_events--3{
-    width: 30%;
-    height: 30rem;
-  }
 }
 
 .flex-items > div{
@@ -58,7 +51,7 @@
 
 .flex-columns h2{
   font-size: 40px;
-  font-weight: 100;
+  // font-weight: 100;
 }
 
 .flex-columns h4{

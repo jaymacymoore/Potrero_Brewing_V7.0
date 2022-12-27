@@ -48,10 +48,15 @@ img {
   background-color: $orange-red;
 }
 
+// Specific Page Stylings
+
 #about,
-#beer{
+#beer,
+#merch,
+#gritanga,
+#gracia{
   .column-2{
-    border-radius: 1rem;
+   border-radius: 1rem;
    margin-left: .75rem;
   }
 }
@@ -71,4 +76,16 @@ img {
   height: 5rem;
   margin-top: -5rem;
   visibility: hidden;
+}
+
+#gritanga,
+#gracia{
+  .row{
+    height: 75%;
+    margin-bottom: 2rem;
+  }
+    img{
+      width: 100% !important;
+      border-radius: 2rem !important; 
+    }
 }

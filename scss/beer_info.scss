@@ -15,20 +15,39 @@
     border-radius: 2rem !important; 
   }
 
+  // Beer Cards
   .beer-container{
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
 
     .card{
       background: black;
       color: whitesmoke;
+
+      &__flex{
+        display: grid;
+        grid-template-columns: 54% 46%;
+      }
+      &__cta{
+        display: flex;
+        align-items: center;
+
+        &--primary{
+          background: $primary-color;;
+        }
+
+        &--secondary{
+          background: $secondary-color;
+        }
+      }
     }
   }
-
   .beer-container{
     justify-content: space-around;
   }
 }
 
+// Beer & Cocktails Neon Sign
 .beer{
   &_text--border{
     display: flex;
@@ -66,5 +85,13 @@
     text-shadow: 
     0 0 1rem #fbffff, 
     0 0 2rem #fbffff;
+  }
+}
+
+// Beer To Go
+.togo{
+  .column{
+    width: 50%;
+    margin: 0 auto;
   }
 }

@@ -72,7 +72,10 @@ img {
   background-color: #dc582a; }
 
 #about .column-2,
-#beer .column-2 {
+#beer .column-2,
+#merch .column-2,
+#gritanga .column-2,
+#gracia .column-2 {
   border-radius: 1rem;
   margin-left: .75rem; }
 
@@ -87,6 +90,16 @@ img {
   height: 5rem;
   margin-top: -5rem;
   visibility: hidden; }
+
+#gritanga .row,
+#gracia .row {
+  height: 75%;
+  margin-bottom: 2rem; }
+
+#gritanga img,
+#gracia img {
+  width: 100% !important;
+  border-radius: 2rem !important; }
 
 #about .about_header_container {
   color: whitesmoke;
@@ -144,7 +157,7 @@ img {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 38rem; }
   .card__side {
     height: 32rem;
     transition: all 0.8s ease;
@@ -157,36 +170,31 @@ img {
     border-radius: 2rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15), 0 1.5rem 4rem rgba(255, 255, 255, 0.25); }
-    .card__side--front {
-      background-color: #fff; }
-    .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #2c9199, #7ce0d3); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #ef9600, #dc582a); }
-      .card__side--back-3 {
-        background-image: url(/dist/img/PBC_LOGO_Family-20.png);
-        background-size: contain;
-        background-repeat: no-repeat; }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
+    .card__side--back-1 {
+      background-image: linear-gradient(to right bottom, #2c9199, #7ce0d3); }
+    .card__side--back-2 {
+      background-image: linear-gradient(to right bottom, #ef9600, #dc582a); }
+    .card__side--back-3 {
+      background-image: url(/dist/img/PBC_LOGO_Family-20.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
   .card__picture {
-    background-size: cover;
     height: 100%;
     background-blend-mode: soft-light;
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem; }
     .card__picture--1 {
-      background-image: url(/dist/img/beer_stock.jpg); }
+      background-image: url(/dist/img/PBCBeerPhotoTester.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat; }
     .card__picture--2 {
-      background-image: url(/dist/img/beer_stock.jpg);
-      height: 50%;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      background-image: url(/dist/img/Hazy.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat; }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2c9199, #7ce0d3), url(../img/nat-7.jpg); }
+      background-image: url(/dist/img/Hazy.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -207,36 +215,6 @@ img {
       background-image: linear-gradient(to right bottom, rgba(239, 150, 0, 0.85), rgba(220, 88, 42, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(44, 145, 153, 0.85), rgba(124, 224, 211, 0.85)); }
-  .card__details {
-    padding: 3rem;
-    background-color: #000; }
-    .card__details ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto; }
-      .card__details ul li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem; }
-        .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #e5e1e6; }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center; }
-  .card__price-box {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -246,33 +224,7 @@ img {
       .card__side {
         height: auto;
         position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0);
-        width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 4rem; } }
-
-.beer_cards {
-  justify-content: space-evenly !important; }
-
-.side-2 {
-  height: 52rem !important;
-  background-size: 50% !important;
-  background-color: black; }
+        box-shadow: none; } }
 
 #beer .beer_header_container {
   text-align: center;
@@ -288,11 +240,19 @@ img {
   width: 100% !important;
   border-radius: 2rem !important; }
 
-#beer .beer-container {
-  display: flex; }
-  #beer .beer-container .card {
-    background: black;
-    color: whitesmoke; }
+#beer .beer-container .card {
+  background: black;
+  color: whitesmoke; }
+  #beer .beer-container .card__flex {
+    display: grid;
+    grid-template-columns: 54% 46%; }
+  #beer .beer-container .card__cta {
+    display: flex;
+    align-items: center; }
+    #beer .beer-container .card__cta--primary {
+      background: #2c9199; }
+    #beer .beer-container .card__cta--secondary {
+      background: #ef9600; }
 
 #beer .beer-container {
   justify-content: space-around; }
@@ -319,6 +279,10 @@ img {
   color: #FBFFFF;
   margin: 3.9rem auto;
   text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+
+.togo .column {
+  width: 50%;
+  margin: 0 auto; }
 
 #events {
   margin-top: 5rem; }
@@ -352,9 +316,12 @@ img {
   margin: auto;
   text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
 
-.events_upcomming {
+.events_upcoming {
   color: whitesmoke; }
-  .events_upcomming--mb {
+  .events_upcoming--1, .events_upcoming--2, .events_upcoming--3 {
+    width: 30%;
+    height: 50rem; }
+  .events_upcoming--mb {
     margin-bottom: 20rem; }
 
 /* Flex Items */
@@ -364,9 +331,6 @@ img {
   justify-content: center;
   text-align: center;
   height: 100%; }
-  .flex-items_events--1, .flex-items_events--2, .flex-items_events--3 {
-    width: 30%;
-    height: 30rem; }
 
 .flex-items > div {
   padding: 20px; }
@@ -404,8 +368,7 @@ img {
   padding: 30px; }
 
 .flex-columns h2 {
-  font-size: 40px;
-  font-weight: 100; }
+  font-size: 40px; }
 
 .flex-columns h4 {
   margin-bottom: 10px; }
@@ -470,6 +433,91 @@ img {
 .col-3-of-4 {
   width: calc( 3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
+#merch .merch_header_container {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-bottom: 2.4rem; }
+
+#merch .row {
+  height: 75%;
+  margin-bottom: 2rem; }
+
+#merch img {
+  width: 100% !important;
+  border-radius: 2rem !important; }
+
+.merch_text--border {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  height: 7.5rem;
+  border: .2rem solid #dc582a;
+  border-radius: 1rem;
+  align-items: center;
+  margin: 2.4rem auto;
+  box-shadow: 0 0 1rem #dc672a,  0 0 2rem #dc672a, 0 0 3rem #dc672a, inset 0 0 1rem #dc672a; }
+
+.merch_text--merch {
+  font-size: 3rem;
+  color: #7ce0d3;
+  margin: -4.7rem auto;
+  text-shadow: 0 0 1rem #7ce0ba,  0 0 2rem #7ce0ba, 0 0 3rem #7ce0ba; }
+
+.merch_text--swag {
+  font-size: 3rem;
+  color: #FBFFFF;
+  margin: 3.9rem auto;
+  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+
+.gallery {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-gap: 1.5rem;
+  padding: 1.5rem; }
+  .gallery__item--1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; }
+  .gallery__item--2 {
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 3; }
+  .gallery__item--3 {
+    grid-row: 1 / span 2;
+    grid-column: 6 / 7; }
+  .gallery__item--4 {
+    grid-column: 7 / -1;
+    grid-row: 1 / span 2; }
+  .gallery__item--5 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 3; }
+  .gallery__item--6 {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 2; }
+  .gallery__item--8 {
+    grid-column: 6 / span 2;
+    grid-row: 3 / span 2; }
+  .gallery__item--9 {
+    grid-row: 3 / span 3; }
+  .gallery__item--10 {
+    grid-row: 6 / span 2; }
+  .gallery__item--11 {
+    grid-column: 2 / span 2;
+    grid-row: 6 / span 2; }
+  .gallery__item--12 {
+    grid-row: 6 / -1; }
+  .gallery__item--13 {
+    grid-column: 5 / span 3;
+    grid-row: 5 / span 3; }
+  .gallery__item--14 {
+    grid-row: 6 / -1; }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -504,11 +552,29 @@ img {
   font-weight: 400; }
 
 /* Header */
-.hero {
-  background: url(/dist/img/PBC_LOGO_Family-20.png) no-repeat center center/contain;
+.carousel .carousel-item {
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff; }
+  .carousel .carousel-item img {
+    height: 100vh;
+    width: auto; }
+
+#beer_garden .hero {
+  background: url(/dist/img/BeerGarden2.jpeg) no-repeat center center/contain;
   height: 100vh;
   position: relative;
   color: #fff; }
+  #beer_garden .hero::before {
+    background: rgba(0, 0, 0, 0) !important; }
+
+#beer_garden .logo .text-primary {
+  text-shadow: 0 0 1rem #2c9199,  0 0 2rem #2c9199,  0 0 3rem #2c9199; }
+
+#beer_garden .logo .text-secondary {
+  text-shadow: 0 0 1rem #ef9600,  0 0 2rem #ef9600,  0 0 3rem #ef9600; }
 
 .hero .content {
   display: flex;
@@ -559,7 +625,7 @@ img {
     flex-direction: row;
     margin-right: 3rem;
     align-self: center;
-    width: 15rem;
+    width: 30rem;
     justify-content: space-around; }
     .footer_social a {
       color: #7ce0d3;

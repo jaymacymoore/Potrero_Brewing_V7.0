@@ -3,7 +3,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 38rem;
 
   &__side {
     height: 32rem;
@@ -21,14 +21,12 @@
     0 1.5rem 4rem rgba($color-white, 0.25)
     ;
 
-    &--front {
-      background-color: $color-white;
-    }
+    // &--front {
+    //   background-color: $color-white;
+    // }
 
     &--back {
-      transform: rotateY(180deg);
-      // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      // transform: rotateY(180deg);
 
       &-1 {
         background-image: linear-gradient(
@@ -53,40 +51,37 @@
       }
     }
   }
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
+  // &:hover &__side--front {
+  //   transform: rotateY(-180deg);
+  // }
+  // &:hover &__side--back {
+  //   transform: rotateY(0);
+  // }
 
   // Front Side Styling
   &__picture {
-    background-size: cover;
     height: 100%;
     background-blend-mode: soft-light;
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
 
     &--1 {
       background-image: 
-        url(/dist/img/beer_stock.jpg);
+        url(/dist/img/PBCBeerPhotoTester.jpeg);  
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     &--2 {
       background-image:
-        url(/dist/img/beer_stock.jpg);
-      height: 50%;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        url(/dist/img/Hazy.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          $primary-color,
-          $sea-green
-        ),
-        url(../img/nat-7.jpg);
+      background-image:
+        url(/dist/img/Hazy.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
@@ -132,49 +127,43 @@
     }
   }
 
-  &__details {
-    padding: 3rem;
-   background-color: $color-black;
+  // &__details {
+  //  padding: 3rem;
+  //  background-color: $color-black;
 
-    ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto;
+  //   ul {
+  //     list-style: none;
+  //     width: 80%;
+  //     margin: 0 auto;
 
-      li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem;
+  //     li {
+  //       text-align: center;
+  //       font-size: 1.5rem;
+  //       padding: 1rem;
 
-        &:not(:last-child) {
-          border-bottom: 1px solid $light-grey;
-        }
-      }
-    }
-  }
+  //       &:not(:last-child) {
+  //         border-bottom: 1px solid $light-grey;
+  //       }
+  //     }
+  //   }
+  // }
 
   // Back Side Styling
-  &__cta {
-    @include absolutecenter;
-    width: 90%;
-    text-align: center;
-  }
+  // &__price-box {
+  //   text-align: center;
+  //   color: $color-white;
+  //   margin-bottom: 8rem;
+  // }
 
-  &__price-box {
-    text-align: center;
-    color: $color-white;
-    margin-bottom: 8rem;
-  }
+  // &__price-only {
+  //   font-size: 1.4rem;
+  //   text-transform: uppercase;
+  // }
 
-  &__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
-
-  &__price-value {
-    font-size: 6rem;
-    font-weight: 100;
-  }
+  // &__price-value {
+  //   font-size: 6rem;
+  //   font-weight: 100;
+  // }
   // Change Card front and back to just card
   // @include respond(tab-port)
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
@@ -188,45 +177,36 @@
       position: relative;
       box-shadow: none;
 
-      &--back {
-        transform: rotateY(0);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-      }
+      // &--back {
+      //   transform: rotateY(0);
+      //   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      // }
     }
-    &:hover &__side--front {
-      transform: rotateY(0);
-    }
+    // &:hover &__side--front {
+    //   transform: rotateY(0);
+    // }
 
-    &__details {
-      padding: 1rem 3rem;
-    }
+    // &__details {
+    //   padding: 1rem 3rem;
+    // }
 
-    &__cta {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(0);
-      width: 100%;
-      padding: 7rem 4rem 4rem 4rem;
-    }
+    // &__price-box {
+    //   margin-bottom: 3rem;
+    // }
 
-    &__price-box {
-      margin-bottom: 3rem;
-    }
-
-    &__price-value {
-      font-size: 4rem;
-    }
+    // &__price-value {
+    //   font-size: 4rem;
+    // }
   }
 }
 
 
-.beer_cards{
-  justify-content: space-evenly !important;
-}
+// .beer_cards{
+//   justify-content: space-evenly !important;
+// }
 
-.side-2{
-  height: 52rem !important;
-  background-size: 50% !important;
-  background-color: black;
-}
+// .side-2{
+//   height: 52rem !important;
+//   background-size: 50% !important;
+//   background-color: black;
+// }
