@@ -16,10 +16,8 @@
     backface-visibility: hidden;
     border-radius: 2rem;
     overflow: hidden;
-    box-shadow: 
-    0 1.5rem 4rem rgba($color-white, 0.15),
-    0 1.5rem 4rem rgba($color-white, 0.25)
-    ;
+    box-shadow: 0 1.5rem 4rem rgba($color-white, 0.15),
+      0 1.5rem 4rem rgba($color-white, 0.25);
 
     // &--front {
     //   background-color: $color-white;
@@ -66,22 +64,96 @@
     border-top-right-radius: 0.3rem;
 
     &--1 {
-      background-image: 
-        url(/dist/img/PBCBeerPhotoTester.jpeg);  
+      background-image: url(/dist/img/beersDrinks/Hazy.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
     }
     &--2 {
-      background-image:
-        url(/dist/img/Hazy.jpeg);
+      background-image: url(/dist/img/beersDrinks/blueberryWheat.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(1.1);
     }
     &--3 {
-      background-image:
-        url(/dist/img/Hazy.jpeg);
+      background-image: url(/dist/img/beersDrinks/blackLager.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(1.1);
+    }
+    &--4 {
+      background-image: url(/dist/img/beersDrinks/kettleSour.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--5 {
+      background-image: url(/dist/img/beersDrinks/chocolatePorter.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--6 {
+      background-image: url(/dist/img/beersDrinks/wcIPA.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--7 {
+      background-image: url(/dist/img/beersDrinks/stout.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+    &--8 {
+      background-image: url(/dist/img/beersDrinks/lagerRegular.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--9 {
+      background-image: url(/dist/img/beersDrinks/sandiaSour.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--10 {
+      background-image: url(/dist/img/beersDrinks/neIPA.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--11 {
+      background-image: url(/dist/img/beersDrinks/session.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--12 {
+      background-image: url(/dist/img/beersDrinks/ddhTriple.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--13 {
+      background-image: url(/dist/img/beersDrinks/margarita.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--14 {
+      background-image: url(/dist/img/beersDrinks/cherryLimeade.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--15 {
+      background-image: url(/dist/img/beersDrinks/rootbeerFloat.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -102,7 +174,14 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
-    &--1 {
+    &--1,
+    &--3,
+    &--5,
+    &--7,
+    &--9,
+    &--11,
+    &--13,
+    &--15 {
       background-image: linear-gradient(
         to right bottom,
         rgba($primary-color, 0.85),
@@ -110,19 +189,17 @@
       );
     }
 
-    &--2 {
+    &--2,
+    &--4,
+    &--6,
+    &--8,
+    &--10,
+    &--12,
+    &--14 {
       background-image: linear-gradient(
         to right bottom,
         rgba($secondary-color, 0.85),
         rgba($orange-red, 0.85)
-      );
-    }
-
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($primary-color, 0.85),
-        rgba($sea-green, 0.85)
       );
     }
   }
@@ -199,7 +276,6 @@
     // }
   }
 }
-
 
 // .beer_cards{
 //   justify-content: space-evenly !important;

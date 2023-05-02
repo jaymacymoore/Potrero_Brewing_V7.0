@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@keyframes splash--out {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+  70% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.2; }
+  85% {
+    opacity: 0.15; }
+  90% {
+    opacity: 0.1; }
+  95% {
+    opacity: 0.05; }
+  99% {
+    opacity: 0.01; }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+
 *,
 *::after,
 *::before {
@@ -24,7 +44,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #000;
   color: #333;
   line-height: 1.6;
@@ -32,6 +52,33 @@ body {
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+.video {
+  max-width: 100vw;
+  max-height: 100vh; }
+  .video__wrap video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 1;
+    animation: splash--out 6.2s 1 forwards 4s ease-out;
+    transition: animation 5s ease-out;
+    object-fit: fill;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 ul {
   list-style: none; }
@@ -135,23 +182,23 @@ img {
 .about_text--border {
   display: flex;
   width: 17rem;
-  border: .2rem solid #ef9600;
+  border: 0.2rem solid #ef9600;
   border-radius: 1rem;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 0 0 1rem #FFBC42,  0 0 2rem #FFBC42, 0 0 3rem #FFBC42, inset 0 0 1rem #FFBC42; }
+  box-shadow: 0 0 1rem #ffbc42, 0 0 2rem #ffbc42, 0 0 3rem #ffbc42, inset 0 0 1rem #ffbc42; }
 
 .about_text--who {
   font-size: 3rem;
-  color: #FBFFFF;
+  color: #fbffff;
   margin: auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+  text-shadow: 0 0 1rem #fbffff, 0 0 2rem #fbffff; }
 
 .about_text--we-are {
   font-size: 3rem;
   color: #7ce0d3;
   margin: auto;
-  text-shadow: 0 0 1rem #0FFFDF,  0 0 2rem #0FFFDF; }
+  text-shadow: 0 0 1rem #0fffdf, 0 0 2rem #0fffdf; }
 
 .card {
   perspective: 150rem;
@@ -184,17 +231,82 @@ img {
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem; }
     .card__picture--1 {
-      background-image: url(/dist/img/PBCBeerPhotoTester.jpeg);
+      background-image: url(/dist/img/beersDrinks/Hazy.jpeg);
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: center; }
     .card__picture--2 {
-      background-image: url(/dist/img/Hazy.jpeg);
+      background-image: url(/dist/img/beersDrinks/blueberryWheat.jpg);
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(1.1); }
     .card__picture--3 {
-      background-image: url(/dist/img/Hazy.jpeg);
+      background-image: url(/dist/img/beersDrinks/blackLager.jpg);
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(1.1); }
+    .card__picture--4 {
+      background-image: url(/dist/img/beersDrinks/kettleSour.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--5 {
+      background-image: url(/dist/img/beersDrinks/chocolatePorter.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--6 {
+      background-image: url(/dist/img/beersDrinks/wcIPA.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--7 {
+      background-image: url(/dist/img/beersDrinks/stout.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center; }
+    .card__picture--8 {
+      background-image: url(/dist/img/beersDrinks/lagerRegular.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--9 {
+      background-image: url(/dist/img/beersDrinks/sandiaSour.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--10 {
+      background-image: url(/dist/img/beersDrinks/neIPA.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--11 {
+      background-image: url(/dist/img/beersDrinks/session.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--12 {
+      background-image: url(/dist/img/beersDrinks/ddhTriple.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--13 {
+      background-image: url(/dist/img/beersDrinks/margarita.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--14 {
+      background-image: url(/dist/img/beersDrinks/cherryLimeade.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card__picture--15 {
+      background-image: url(/dist/img/beersDrinks/rootbeerFloat.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -209,12 +321,10 @@ img {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--1 {
+    .card__heading-span--1, .card__heading-span--3, .card__heading-span--5, .card__heading-span--7, .card__heading-span--9, .card__heading-span--11, .card__heading-span--13, .card__heading-span--15 {
       background-image: linear-gradient(to right bottom, rgba(44, 145, 153, 0.85), rgba(124, 224, 211, 0.85)); }
-    .card__heading-span--2 {
+    .card__heading-span--2, .card__heading-span--4, .card__heading-span--6, .card__heading-span--8, .card__heading-span--10, .card__heading-span--12, .card__heading-span--14 {
       background-image: linear-gradient(to right bottom, rgba(239, 150, 0, 0.85), rgba(220, 88, 42, 0.85)); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(44, 145, 153, 0.85), rgba(124, 224, 211, 0.85)); }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -225,6 +335,24 @@ img {
         height: auto;
         position: relative;
         box-shadow: none; } }
+
+#gritanga img,
+#gritanga .column-2 {
+  height: 42.6rem; }
+
+#gritanga .carousel-inner .carouse.item img {
+  display: inline-block; }
+
+#gritanga .carousel .carousel-item {
+  height: 50vh;
+  width: 50vw;
+  position: relative;
+  top: 0;
+  left: 25%;
+  color: #fff; }
+  #gritanga .carousel .carousel-item img {
+    height: 100%;
+    width: 50%; }
 
 #beer .beer_header_container {
   text-align: center;
@@ -262,27 +390,32 @@ img {
   flex-direction: column;
   width: 22rem;
   height: 7.5rem;
-  border: .2rem solid #6ef2d3;
+  border: 0.2rem solid #6ef2d3;
   border-radius: 1rem;
   align-items: center;
   margin: 2.4rem auto;
-  box-shadow: 0 0 1rem #1DC19B,  0 0 2rem #1DC19B, 0 0 3rem #1DC19B, inset 0 0 1rem #1DC19B; }
+  box-shadow: 0 0 1rem #1dc19b, 0 0 2rem #1dc19b, 0 0 3rem #1dc19b, inset 0 0 1rem #1dc19b; }
 
 .beer_text--beer {
   font-size: 3rem;
   color: #dc582a;
   margin: -4.7rem auto;
-  text-shadow: 0 0 1rem #E58461,  0 0 2rem #E58461; }
+  text-shadow: 0 0 1rem #e58461, 0 0 2rem #e58461; }
 
 .beer_text--cocktails {
   font-size: 3rem;
-  color: #FBFFFF;
+  color: #fbffff;
   margin: 3.9rem auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+  text-shadow: 0 0 1rem #fbffff, 0 0 2rem #fbffff; }
 
 .togo .column {
   width: 50%;
   margin: 0 auto; }
+
+.beer_video {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem; }
 
 #events {
   margin-top: 5rem; }
@@ -293,28 +426,29 @@ img {
   #events img,
   #events .column-2 {
     width: 100% !important;
+    height: 42.6rem;
     border-radius: 2rem !important; }
 
 .events_text--border {
   display: flex;
   width: 17rem;
-  border: .2rem solid #8ffcff;
+  border: 0.2rem solid #8ffcff;
   border-radius: 1rem;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 0 0 1rem #0900ff,  0 0 2rem #0900ff, 0 0 3rem #0900ff, inset 0 0 1rem #0900ff; }
+  box-shadow: 0 0 1rem #0900ff, 0 0 2rem #0900ff, 0 0 3rem #0900ff, inset 0 0 1rem #0900ff; }
 
 .events_text--game {
   font-size: 3rem;
   color: #e20000;
   margin: auto;
-  text-shadow: 0 0 1rem #ff5b5b,  0 0 2rem #ff5b5b; }
+  text-shadow: 0 0 1rem #ff5b5b, 0 0 2rem #ff5b5b; }
 
 .events_text--on {
   font-size: 3rem;
-  color: #FBFFFF;
+  color: #fbffff;
   margin: auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+  text-shadow: 0 0 1rem #fbffff, 0 0 2rem #fbffff; }
 
 .events_upcoming {
   color: whitesmoke; }
@@ -323,6 +457,9 @@ img {
     height: 50rem; }
   .events_upcoming--mb {
     margin-bottom: 20rem; }
+  .events_upcoming h4 {
+    margin-top: 0.5rem;
+    font-size: 2rem; }
 
 /* Flex Items */
 .flex-items {
@@ -452,23 +589,29 @@ img {
   flex-direction: column;
   width: 22rem;
   height: 7.5rem;
-  border: .2rem solid #dc582a;
+  border: 0.2rem solid #dc582a;
   border-radius: 1rem;
   align-items: center;
   margin: 2.4rem auto;
-  box-shadow: 0 0 1rem #dc672a,  0 0 2rem #dc672a, 0 0 3rem #dc672a, inset 0 0 1rem #dc672a; }
+  box-shadow: 0 0 1rem #dc672a, 0 0 2rem #dc672a, 0 0 3rem #dc672a, inset 0 0 1rem #dc672a; }
 
 .merch_text--merch {
   font-size: 3rem;
   color: #7ce0d3;
   margin: -4.7rem auto;
-  text-shadow: 0 0 1rem #7ce0ba,  0 0 2rem #7ce0ba, 0 0 3rem #7ce0ba; }
+  text-shadow: 0 0 1rem #7ce0ba, 0 0 2rem #7ce0ba, 0 0 3rem #7ce0ba; }
 
 .merch_text--swag {
   font-size: 3rem;
-  color: #FBFFFF;
+  color: #fbffff;
   margin: 3.9rem auto;
-  text-shadow: 0 0 1rem #fbffff,  0 0 2rem #fbffff; }
+  text-shadow: 0 0 1rem #fbffff, 0 0 2rem #fbffff; }
+
+.merch img,
+.merch .column-2 {
+  width: 100% !important;
+  height: 42.2rem;
+  border-radius: 2rem !important; }
 
 .gallery {
   grid-column: full-start / full-end;
@@ -525,7 +668,7 @@ img {
   justify-content: space-between;
   background-color: #333;
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
   width: 100%;
   height: 7rem;
   position: fixed;
@@ -539,7 +682,7 @@ img {
 .navbar a {
   color: #fff;
   padding: 1rem 2rem;
-  margin: 0 .5rem; }
+  margin: 0 0.5rem; }
 
 .navbar a:hover {
   border-bottom: #2c9199 0.2rem solid;
@@ -552,6 +695,12 @@ img {
   font-weight: 400; }
 
 /* Header */
+.hero {
+  background: url(/dist/img/logosBranding/PBC_LOGO_Family-20.png) no-repeat center center/contain;
+  height: 100vh;
+  position: relative;
+  color: #fff; }
+
 .carousel .carousel-item {
   height: 100vh;
   position: relative;
@@ -563,7 +712,7 @@ img {
     width: auto; }
 
 #beer_garden .hero {
-  background: url(/dist/img/BeerGarden2.jpeg) no-repeat center center/contain;
+  background: url(/dist/img/logosBranding/beerGardenLogo.jpeg) no-repeat center center/contain;
   height: 100vh;
   position: relative;
   color: #fff; }
@@ -571,10 +720,10 @@ img {
     background: rgba(0, 0, 0, 0) !important; }
 
 #beer_garden .logo .text-primary {
-  text-shadow: 0 0 1rem #2c9199,  0 0 2rem #2c9199,  0 0 3rem #2c9199; }
+  text-shadow: 0 0 1rem #2c9199, 0 0 2rem #2c9199, 0 0 3rem #2c9199; }
 
 #beer_garden .logo .text-secondary {
-  text-shadow: 0 0 1rem #ef9600,  0 0 2rem #ef9600,  0 0 3rem #ef9600; }
+  text-shadow: 0 0 1rem #ef9600, 0 0 2rem #ef9600, 0 0 3rem #ef9600; }
 
 .hero .content {
   display: flex;
@@ -595,7 +744,7 @@ img {
   margin: 2rem 0 3rem; }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: zero;
   left: zero;

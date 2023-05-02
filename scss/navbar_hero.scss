@@ -5,7 +5,7 @@
   justify-content: space-between;
   background-color: #333;
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
   width: 100%;
   height: 7rem;
   position: fixed;
@@ -21,11 +21,11 @@
 .navbar a {
   color: #fff;
   padding: 1rem 2rem;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
 .navbar a:hover {
-  border-bottom: $primary-color .2rem solid;
+  border-bottom: $primary-color 0.2rem solid;
   color: $secondary-color;
 }
 
@@ -38,14 +38,15 @@
 }
 
 /* Header */
-// .hero {
-//   background: url(/dist/img/PBC_LOGO_Family-20.png) no-repeat center center/contain;
-//   height: 100vh;
-//   position: relative;
-//   color: #fff;
-// }
+.hero {
+  background: url(/dist/img/logosBranding/PBC_LOGO_Family-20.png) no-repeat
+    center center/contain;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
 
-.carousel{
+.carousel {
   .carousel-item {
     height: 100vh;
     position: relative;
@@ -53,39 +54,33 @@
     left: 0;
     color: #fff;
 
-    img{
+    img {
       height: 100vh;
       width: auto;
     }
   }
-} 
+}
 
-
-#beer_garden{
-  .hero{
-  background: url(/dist/img/BeerGarden2.jpeg) no-repeat center center/contain;
-  height: 100vh;
-  position: relative;
-  color: #fff;
+#beer_garden {
+  .hero {
+    background: url(/dist/img/logosBranding/beerGardenLogo.jpeg) no-repeat
+      center center/contain;
+    height: 100vh;
+    position: relative;
+    color: #fff;
     &::before {
       background: rgba(0, 0, 0, 0) !important;
     }
   }
 }
 
-#beer_garden{
-  .logo{
-    .text-primary{
-      text-shadow: 
-    0 0 1rem #2c9199, 
-    0 0 2rem #2c9199, 
-    0 0 3rem #2c9199;
+#beer_garden {
+  .logo {
+    .text-primary {
+      text-shadow: 0 0 1rem #2c9199, 0 0 2rem #2c9199, 0 0 3rem #2c9199;
     }
-    .text-secondary{
-      text-shadow: 
-      0 0 1rem #ef9600, 
-      0 0 2rem #ef9600, 
-      0 0 3rem #ef9600;
+    .text-secondary {
+      text-shadow: 0 0 1rem #ef9600, 0 0 2rem #ef9600, 0 0 3rem #ef9600;
     }
   }
 }
@@ -112,13 +107,13 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: zero;
   left: zero;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero * {

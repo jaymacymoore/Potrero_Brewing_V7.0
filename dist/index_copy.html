@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a36e404431.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" />
+    <title>Potrero Brewing Company</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <div id="navbar" class="navbar top">
+        <h2 class="logo">
+          <span class="text-primary"> Potrero</span>
+          <span class="text-secondary"> Brewing</span
+          ><span class="text-primary"> Company</span>
+        </h2>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="index.html#beer">Beers</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#merch">Merch</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="beer_garden.html">El Garden</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="img/Merch/JosueShirt2.jpeg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="img/merch/TwoDudesHats.jpeg"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="img/beer_stock.jpg"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> -->
+
+    <main>
+      <!-- Beer Section -->
+      <section id="beer">
+        <div class="beer flex-columns flex-reverse">
+          <div class="beer_header_container">
+            <h2>
+              <span class="beer_text--border"
+                >&nbsp; <span class="beer_text--beer">BEERS</span>
+                <span class="beer_text--cocktails">& COCKTAILS</span> &nbsp;
+              </span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="column-1">
+                <!-- <img src="./img/beer_stock.jpg" alt="Blog" /> -->
+                <video class="beer_video" contros autoplay>
+                  <source src="./media/pourBeerVert.mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-2 bg-color-seagreen">
+                <h4>Our Beer</h4>
+                <h2>We have beers duh!</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Accusamus perspiciatis quod qui fugit pariatur minus quam modi
+                  similique incidunt iure omnis reiciendis sequi exercitationem,
+                  blanditiis tempora, perferendis ducimus voluptatem debitis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="beer-container flex-columns beer_cards">
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--1">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--1">
+                      Hazy IPA</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--secondary">
+                    <ul>
+                      <li>5.8% ABV</li>
+                      <li>Full body</li>
+                      <li>Citrus flavors</li>
+                      <li>Citra & Mosaic hops</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--2">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--2">
+                      Blueberry Wheat</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--primary">
+                    <ul>
+                      <li>5% ABV</li>
+                      <li>Light body</li>
+                      <li>Super easy drinker</li>
+                      <li>Hints of blueberry</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--3">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--3">
+                      Black Lager</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--secondary">
+                    <ul>
+                      <li>5% ABV</li>
+                      <li>Light body</li>
+                      <li>Roasted flavors</li>
+                      <li>Easy drinker</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--4">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--4">
+                      Kettle Sour</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--primary">
+                    <ul>
+                      <li>4.8% ABV</li>
+                      <li>Light body</li>
+                      <li>Tart flavor</li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--5">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--5">
+                      Chocolate Porter</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--secondary">
+                    <ul>
+                      <li>5.5% ABV</li>
+                      <li>Lighter body</li>
+                      <li>Coffee notes</li>
+                      <li>Maleku cacao nibs</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--6">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--6">
+                      WC IPA
+                    </span>
+                  </h4>
+                  <div class="card__cta card__cta--primary">
+                    <ul>
+                      <li>6.3% ABV</li>
+                      <li>Medium body</li>
+                      <li>Classic WC flavor</li>
+                      <li>Simcoe & Amarillo hops</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--7">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--7">
+                      Stout</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--secondary">
+                    <ul>
+                      <li>8.5% ABV</li>
+                      <li>Heavy body</li>
+                      <li>Roasted coffee</li>
+                      <li>Chocolate notes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--8">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--8">
+                      Lager</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--primary">
+                    <ul>
+                      <li>4.8% ABV</li>
+                      <li>Lighty body</li>
+                      <li>Crisp</li>
+                      <li>Easy all day drinker</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--9">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--9">
+                      Sandia Sour</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--secondary">
+                    <ul>
+                      <li>4.8% ABV</li>
+                      <li>Very light and crisp</li>
+                      <li>Salted watermelon</li>
+                      <li>Sour hibiscus</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--10">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--10">
+                      New England IPA</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--primary">
+                    <ul>
+                      <li>7.2% ABV</li>
+                      <li>Heavier body</li>
+                      <li>Citrus flavors</li>
+                      <li>Mosaic & Citra hops</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--11">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--11">
+                      Session</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--secondary">
+                    <ul>
+                      <li>3.8% ABV</li>
+                      <li>Very light body</li>
+                      <li>Crisp</li>
+                      <li>Citra hops</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__flex">
+                  <div class="card__picture card__picture--12">&nbsp;</div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--12">
+                      DDH Triple</span
+                    >
+                  </h4>
+                  <div class="card__cta card__cta--primary">
+                    <ul>
+                      <li>9.5% ABV</li>
+                      <li>Medium body</li>
+                      <li>Heavier IBUs</li>
+                      <li>Galaxy & El Dorado hops</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="togo">
+            <div class="column">
+              <div class="column-2 bg-color-orangered">
+                <h4>Beers To Go</h4>
+                <h2>We provide beer to go duh!</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Accusamus perspiciatis quod qui fugit pariatur minus quam modi
+                  similique incidunt iure omnis reiciendis sequi exercitationem,
+                  blanditiis tempora, perferendis ducimus voluptatem debitis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section id="events" class="events flex-columns">
+        <div class="events_header_container">
+          <h2>
+            <span class="events_text--border"
+              >&nbsp; <span class="events_text--game">GAME</span>
+              <span class="events_text--on">ON</span> &nbsp;
+            </span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/events.jpg" alt="Events" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-color-secondary">
+              <h4>Stuff to do</h4>
+              <h2>Events and Games</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus perspiciatis quod qui fugit pariatur minus quam modi
+                similique incidunt iure omnis reiciendis sequi exercitationem,
+                blanditiis tempora, perferendis ducimus voluptatem debitis!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="events_upcoming">
+          <div class="flex-items events_upcoming--mb">
+            <div class="events_upcoming--1">
+              <img src="./img/BandTest.jpeg" alt="John Doe" />
+              <h4>Someone Plays Music</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                nobis dolorum, illo asperiores error illum in cumque officia,
+                animi consectetur architecto, placeat eveniet. Possimus,
+                commodi?
+              </p>
+            </div>
+            <div class="events_upcoming--2">
+              <img src="./img/JustinTrivia.jpeg" alt="Jane Doe" />
+              <h4>Trivia Night</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur excepturi earum, totam soluta ex minus cupiditate
+                itaque minima cum. Dolore veniam distinctio nam nostrum
+                blanditiis.
+              </p>
+            </div>
+            <div class="events_upcoming--3">
+              <img src="./img/event_2.jpg" alt="Steve Smith" />
+              <h4>Someone Plays Music</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                nobis dolorum, illo asperiores error illum in cumque officia,
+                animi consectetur architecto, placeat eveniet. Possimus,
+                commodi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Merch Section -->
+      <section id="merch">
+        <div class="merch flex-columns flex-reverse">
+          <div class="merch_header_container">
+            <h2>
+              <span class="merch_text--border"
+                >&nbsp; <span class="merch_text--merch">MERCH</span>
+                <span class="merch_text--swag">& SWAG</span> &nbsp;
+              </span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="column-1">
+                <img src="./img/beer_stock.jpg" alt="Blog" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-2 bg-color-seagreen">
+                <h4>Our Merch</h4>
+                <h2>We sell some things.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Accusamus perspiciatis quod qui fugit pariatur minus quam modi
+                  similique incidunt iure omnis reiciendis sequi exercitationem,
+                  blanditiis tempora, perferendis ducimus voluptatem debitis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="img/Merch/MotoSticker.jpeg"
+              alt="Gallery Image 1"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="img/Merch/JosueShirt2.jpeg"
+              alt="Gallery Image 2"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="img/Merch/Coasters1.jpeg"
+              alt="Gallery Image 3"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="img/merch/JosueShirt1.jpeg"
+              alt="Gallery Image 4"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--5">
+            <img
+              src="img/merch/AvaShirt.jpeg"
+              alt="Gallery Image 5"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--6">
+            <img
+              src="img/Merch/TwoDudesHats.jpeg"
+              alt="Gallery Image 6"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--7">
+            <img
+              src="img/Merch/JosueShirt2.jpeg"
+              alt="Gallery Image 7"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--8">
+            <img
+              src="img/merch/Coasters1.jpeg"
+              alt="Gallery Image 8"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--9">
+            <img
+              src="img/Merch/JosueShirt2.jpeg"
+              alt="Gallery Image 9"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--10">
+            <img
+              src="img/merch/JosueShirt1.jpeg"
+              alt="Gallery Image 10"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--11">
+            <img
+              src="img/merch/MotoSticker.jpeg"
+              alt="Gallery Image 11"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--12">
+            <img
+              src="img/merch/Coasters2.jpeg"
+              alt="Gallery Image 12"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--13">
+            <img
+              src="img/Merch/TwoDudesHats.jpeg"
+              alt="Gallery Image 13"
+              class="gallery__img"
+            />
+          </figure>
+
+          <figure class="gallery__item gallery__item--14">
+            <img
+              src="img/merch/AvaShirt.jpeg"
+              alt="Gallery Image 14"
+              class="gallery__img"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about flex-columns">
+        <div class="about_header_container">
+          <h2>
+            <span class="about_text--border"
+              >&nbsp; <span class="about_text--who">WHO</span>
+              <span class="about_text--we-are">WE ARE</span> &nbsp;
+            </span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="column-1 flex-info">
+              <div class="hours info-section">
+                <div class="hours__grid-1">Hours: &nbsp; 11am-10pm</div>
+                <div class="hours__grid-2">Sunday: &nbsp; 11am-9pm</div>
+              </div>
+              <div class="closed info-section">Closed Tuesday</div>
+              <div class="phone info-section">+(506) 4080 3783</div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="column-2 bg-color-secondary">
+              <h4>About Us</h4>
+              <h2>We provide beer duh!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus perspiciatis quod qui fugit pariatur minus quam modi
+                similique incidunt iure omnis reiciendis sequi exercitationem,
+                blanditiis tempora, perferendis ducimus voluptatem debitis!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="footer_logo">
+        <img src="./img/PBC_LOGO Family-17.png" alt="" />
+      </div>
+      <div class="footer_para">
+        <p>Copyright &copy: 2022 - Potrero Brewing Company</p>
+      </div>
+      <div class="footer_social">
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa fa-map-pin fa-2x"></i></a>
+        <a href="#"><i class="fa fa-brands fa-google fa-2x"></i></a>
+        <a href="#"><img src="./img/tripadvisor.png" alt="" /></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      jQuery(document).ready(function () {
+        // Scrolling for anchor links in within the same page
+        jQuery('a[href*="#"]:not([href="#"])').click(function () {
+          _hash = this.hash;
+          _scroll_it(_hash);
+        });
+
+        // scrolling for anchor links coming from a different page
+        var _hash = window.location.hash;
+        if (_hash.length > 0) {
+          window.scrollTo(0, 0);
+
+          setTimeout(function () {
+            _scroll_it(_hash);
+          }, 400);
+        }
+
+        function _scroll_it(_hash) {
+          jQuery("html,body").animate(
+            {
+              scrollTop: jQuery(_hash).offset().top - 100,
+            },
+            400
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

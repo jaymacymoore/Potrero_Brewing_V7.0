@@ -1,11 +1,18 @@
-#about{
-  .about_header_container{
+#about {
+  .about_header_container {
     color: whitesmoke;
     text-align: center;
     margin-bottom: 2.4rem;
   }
+
+  //  img,
+  // .column-2 {
+  //   width: 100% !important;
+  //   height: 426px;
+  //   border-radius: 2rem !important;
+  // }
 }
-.info-section{
+.info-section {
   padding: 0.525rem 4.2rem;
   width: 40%;
   margin: 0 auto;
@@ -15,7 +22,7 @@
   font-weight: 700;
 }
 
-.flex-info{
+.flex-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -37,40 +44,32 @@
 }
 
 // About Us Neon Sign
-.about{
-  &_text--border{
+.about {
+  &_text--border {
     display: flex;
     width: 17rem;
-    border: .2rem solid #ef9600;
+    border: 0.2rem solid #ef9600;
     border-radius: 1rem;
     align-items: center;
     margin: 0 auto;
 
-    box-shadow: 
-    0 0 1rem #FFBC42, 
-    0 0 2rem #FFBC42,
-    0 0 3rem #FFBC42,
-    inset 0 0 1rem #FFBC42
-    ;
+    box-shadow: 0 0 1rem #ffbc42, 0 0 2rem #ffbc42, 0 0 3rem #ffbc42,
+      inset 0 0 1rem #ffbc42;
   }
 
-  &_text--who{
+  &_text--who {
     font-size: 3rem;
-    color: #FBFFFF;
+    color: #fbffff;
     margin: auto;
-  
-    text-shadow: 
-    0 0 1rem #fbffff, 
-    0 0 2rem #fbffff;
+
+    text-shadow: 0 0 1rem #fbffff, 0 0 2rem #fbffff;
   }
-  
-  &_text--we-are{
+
+  &_text--we-are {
     font-size: 3rem;
     color: $sea-green;
     margin: auto;
-  
-    text-shadow: 
-    0 0 1rem #0FFFDF, 
-    0 0 2rem #0FFFDF;
+
+    text-shadow: 0 0 1rem #0fffdf, 0 0 2rem #0fffdf;
   }
 }

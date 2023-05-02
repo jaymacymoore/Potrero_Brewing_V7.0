@@ -1,0 +1,26 @@
+#gritanga {
+  img,
+  .column-2 {
+    height: 42.6rem;
+  }
+
+  .carousel-inner .carouse.item img {
+    display: inline-block;
+  }
+
+  .carousel {
+    .carousel-item {
+      height: 50vh;
+      width: 50vw;
+      position: relative;
+      top: 0;
+      left: 25%;
+      color: #fff;
+
+      img {
+        height: 100%;
+        width: 50%;
+      }
+    }
+  }
+}

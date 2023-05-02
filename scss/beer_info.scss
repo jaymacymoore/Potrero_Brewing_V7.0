@@ -1,97 +1,96 @@
-#beer{
-  .beer_header_container{
+#beer {
+  .beer_header_container {
     text-align: center;
     color: whitesmoke;
     font-size: 3rem;
     margin-bottom: 2.4rem;
   }
 
-  .row{
-  height: 75%;
-  margin-bottom: 2rem;
-}
-  img{
+  .row {
+    height: 75%;
+    margin-bottom: 2rem;
+  }
+  img {
     width: 100% !important;
-    border-radius: 2rem !important; 
+    border-radius: 2rem !important;
   }
 
   // Beer Cards
-  .beer-container{
+  .beer-container {
     // display: flex;
     // flex-direction: column;
 
-    .card{
+    .card {
       background: black;
       color: whitesmoke;
 
-      &__flex{
+      &__flex {
         display: grid;
         grid-template-columns: 54% 46%;
       }
-      &__cta{
+      &__cta {
         display: flex;
         align-items: center;
 
-        &--primary{
-          background: $primary-color;;
+        &--primary {
+          background: $primary-color;
         }
 
-        &--secondary{
+        &--secondary {
           background: $secondary-color;
         }
       }
     }
   }
-  .beer-container{
+  .beer-container {
     justify-content: space-around;
   }
 }
 
 // Beer & Cocktails Neon Sign
-.beer{
-  &_text--border{
+.beer {
+  &_text--border {
     display: flex;
     flex-direction: column;
     width: 22rem;
     height: 7.5rem;
-    border: .2rem solid #6ef2d3;
+    border: 0.2rem solid #6ef2d3;
     border-radius: 1rem;
     align-items: center;
     margin: 2.4rem auto;
 
-    box-shadow: 
-    0 0 1rem #1DC19B, 
-    0 0 2rem #1DC19B,
-    0 0 3rem #1DC19B,
-    inset 0 0 1rem #1DC19B
-    ;
+    box-shadow: 0 0 1rem #1dc19b, 0 0 2rem #1dc19b, 0 0 3rem #1dc19b,
+      inset 0 0 1rem #1dc19b;
   }
 
-  &_text--beer{
+  &_text--beer {
     font-size: 3rem;
     color: #dc582a;
     margin: -4.7rem auto;
 
-    text-shadow: 
-    0 0 1rem #E58461, 
-    0 0 2rem #E58461;
+    text-shadow: 0 0 1rem #e58461, 0 0 2rem #e58461;
   }
 
-  &_text--cocktails{
+  &_text--cocktails {
     font-size: 3rem;
-    color: #FBFFFF;
+    color: #fbffff;
     margin: 3.9rem auto;
 
-    text-shadow: 
-    0 0 1rem #fbffff, 
-    0 0 2rem #fbffff;
+    text-shadow: 0 0 1rem #fbffff, 0 0 2rem #fbffff;
   }
 }
 
 // Beer To Go
-.togo{
-  .column{
+.togo {
+  .column {
     width: 50%;
     margin: 0 auto;
   }
+}
+
+//Beer Video
+.beer_video {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
 }

@@ -60,3 +60,68 @@
     }
   }
 }
+// Keyframes
+
+@keyframes splash--out {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  70% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  85% {
+    opacity: 0.15;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  95% {
+    opacity: 0.05;
+  }
+
+  99% {
+    opacity: 0.01;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+// @keyframes splash--in {
+//   0% {
+//     opacity: 0;
+//     z-index: -1;
+//   }
+
+//   70% {
+//     opacity: 0.7;
+//   }
+
+//   80% {
+//     opacity: 0.8;
+//   }
+
+//   95% {
+//     opacity: 0.95;
+//   }
+
+//   99% {
+//     opacity: 0.99;
+//   }
+
+//   100% {
+//     opacity: 1;
+//     z-index: 1;
+//   }
+// }
